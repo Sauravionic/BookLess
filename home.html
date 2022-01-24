@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
     <title>Bookless</title>
 </head>
 <body>
@@ -81,13 +82,13 @@
                         </a>
                     </li>
 
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">
+                    <li class="menu__item signup">
+                        <a href="#" class="menu__link signup_link">
                             <span class="menu__title">
-                                <span class="menu__first-word" data-hover="Sign">
+                                <span class="menu__first-word signup_first-word" data-hover="Sign">
                                     Sign
                                 </span>
-                                <span class="menu__second-word" data-hover="Up">
+                                <span class="menu__second-word signup_second-word" data-hover="Up">
                                     Up
                                 </span>
                             </span>
@@ -100,8 +101,9 @@
         <div class="midbody"></div>
         <div class="lastbody"></div>
         <footer></footer>
-        <div class="darkmode">
-            <button class="darkbutton"></button>
+        <div id="darkMode" class="darkmode">
+            <button id= "darkButton" class="darkbutton"></button>
+            <button id = "whiteButton" class="whiteButton hidden"></button>
         </div>
     </section>
 </body>

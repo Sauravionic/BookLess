@@ -1,0 +1,12 @@
+var darkMode = document.getElementById("darkMode");
+var darkButton = document.getElementById("darkButton");
+var whiteButton = document.getElementById("whiteButton");
+
+darkButton.addEventListener("click",function(){
+    darkButton.classList.add("hidden");
+    whiteButton.classList.remove("hidden");
+});
+whiteButton.addEventListener("click",function(){
+    whiteButton.classList.add("hidden");
+    darkButton.classList.remove("hidden");
+})

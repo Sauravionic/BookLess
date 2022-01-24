@@ -1,4 +1,8 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
 body {
+    margin: 0;
     height: 100vh;
     background: #fefefe;
 }
@@ -84,7 +88,26 @@ a {
     bottom: 105%;
     color: #0c8040;
 }
-
+.signup_link {
+    background: black;
+    margin-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    border-radius: 11px;
+    text-align: center;
+}
+.signup_first-word {
+    color: #05a04b;
+}
+.signup_first-word::before {
+    color: rgb(216, 205, 205);
+}
+.signup_second-word {
+    color: rgb(216, 205, 205);
+}
+.signup_second-word::before {
+    color: #05a04b;
+}
 .darkmode {
     position: fixed;
     left: 20px;
@@ -101,4 +124,22 @@ a {
     height: 50px;
     width: 50px;
     cursor: pointer;
+}
+.darkbutton:hover {
+    background-image:url("images/white-mode.png")
+}
+.whiteButton {
+    background-image: url("Images/white-mode.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.whiteButton:hover {
+    background-image: url("images/dark-mode.png");
+}
+.hidden { 
+    display: none;
 }
