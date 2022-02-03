@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="home.js" defer></script>
     <title>Bookless</title>
 </head>
@@ -17,7 +18,7 @@
             <div class="options">
                 <ul class="menu">
                     <li class="menu__item">
-                        <a href="#" class="menu__link">
+                        <a href="about us/aboutus.html" class="menu__link">
                             <span class="menu__title">
                                 <span class="menu__first-word" data-hover="About">
                                     About
@@ -70,7 +71,7 @@
                     </li>
 
                     <li class="menu__item">
-                        <a href="#" class="menu__link">
+                        <a href="signin/signin.html" class="menu__link">
                             <span class="menu__title">
                                 <span class="menu__first-word" data-hover="Sign">
                                     Sign
@@ -83,7 +84,7 @@
                     </li>
 
                     <li class="menu__item signup">
-                        <a href="#" class="menu__link signup_link">
+                        <a href="signup/signup.html" class="menu__link signup_link">
                             <span class="menu__title">
                                 <span class="menu__first-word signup_first-word" data-hover="Sign">
                                     Sign
@@ -109,14 +110,29 @@
                         <p class = "exist">We exist for your ease of existence.</p>
                         <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit eius ab tempora perferendis, animi nostrum sunt dicta enim, quas ut illo atque quisquam, quaerat maiores cumque harum repellendus aperiam?</p>
                         <div class="midbuttons">
-                            <button class="signin">Let's Go</button>
-                            <button class="signup">Register</button>
+                            <button class="signin" onclick="window.location.href = 'signin/signin.html'">Let's Go</button>
+                            <button class="signup" onclick="window.location.href = 'signup/signup.html'">Register</button>
                         </div>
                     </div> 
             </div>
         </div>
-        <div class="lastbody"></div>
-        <footer></footer>
+        <footer class = "footer">
+            <div class="footerlogo">
+                <h1><span>BookLess</span></h1>
+                <p>Dive into the virtual world of imagination</p>
+            </div>
+            <div class="footericons">
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <div class="name">
+                <p>Ionic</p>
+            </div>    
+        </footer>
         <div id="darkMode" class="darkmode">
             <button id= "darkButton" class="darkbutton"></button>
             <button id = "whiteButton" class="whiteButton hidden"></button>

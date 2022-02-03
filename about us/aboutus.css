@@ -6,6 +6,8 @@ body {
     margin: 0;
     height: 100vh;
     background: #fefefe;
+    font-family: 'Kumbh Sans',sans-serif;
+
 }
 a {
     outline: 0;
@@ -112,127 +114,108 @@ a {
 .signup_second-word::before {
     color: #07e26a;
 }
-.darkmode {
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-}
-.darkbutton {
-    background-image: url("images/dark-mode.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 1px solid white;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    outline: none;
-}
-.darkbutton:hover {
-    background-image:url("images/white-mode.png")
-}
-.whiteButton {
-    background-image: url("Images/white-mode.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    outline: none;
-}
-.whiteButton:hover {
-    background-image: url("images/dark-mode.png");
-}
-.hidden { 
-    display: none;
-}
 
 .midbody {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    padding-top: 2px;
-    padding-left: 35px;
-    padding-right: 50px;
-    /* border-bottom: 3px solid #ccd7d7; */
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
 }
-.midbody .bigimage{
-    /* height: 50%; */
-    width: 45%;
-    flex-basis: 50%;
+.midbody .header h1{
+    font-size: 30px;
+    color: hsl(220,13%,13%);
+    letter-spacing: 0.8px;
 }
-
-.midcontent {
-    flex-basis: 40%;
-    text-align: left;
-    display: flex;
-    font-family: 'Kumbh Sans', sans-serif;
-    padding-right: 2%;
-    /* justify-content: center; */
-}
-.midcontent .cardcontent {
-    align-self: center;
-}
-.cardcontent .inc {
-    font-weight: 700;
-    letter-spacing: 1.7px;
+.midbody .header h1:hover {
     color: #0c8040;
 }
-.cardcontent h1 {
-    font-size: 37px;
-    color: hsl(220,13%,13%);
+.midbody .team h1{
     margin-bottom: 0;
-    margin-top: 0;
-    letter-spacing: 1.2px;
+    color: hsl(220,13%,13%);
+    opacity: 0.9;
+    letter-spacing: 0.75px;
 }
-.cardcontent h1 span {
-    color: #05a04b;
-    cursor: pointer;
-}
-.cardcontent .exist {
-    margin-bottom: 3px;
-    color: rgb(87, 93, 104);
-    letter-spacing: 1px;
-}
-.cardcontent .para {
-    margin-top: 9px;
-    word-spacing: 2px;
-    letter-spacing: 0.4px;
-    color: rgb(107, 116, 104);
-}
-.cardcontent .midbuttons {
+
+.midbody .cards {
     display: flex;
-    justify-content: space-between;
-    margin-top: 35px;
-    margin-right: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4%;
+    color: #fffefe;
 }
-.midbuttons button {
-    width: 50%;
-    height: 50px;
-    font-family: 'Kumbh Sans',sans-serif;
-    font-size: 17px;
-    font-weight: 500;
+
+.card {
+    background: hsla(183,100%,15%,1);
+    border-radius: 20px;
+    padding: 30px 20px 25px 20px;
+    max-width: 400px;
+    text-align: center;
     cursor: pointer;
-    background: #05a04b;
-    border: none;
-    border-radius: 10px;
+    margin-top: 2%;
+}
+
+.card:hover {
+    background: rgb(55, 129, 119);
+}
+
+.cardtop img {
+    height: 100px;
+    width: 100px;
+    border: 4px solid white;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.cardmid h3 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+.cardmid h2{
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+.cardmid h4 {
+    margin-top: 15px;
+    font-weight: 500;
+    opacity: 0.9;
+    letter-spacing: 0.8px;    
+}
+.cardmid p {
+    line-height: 1.3;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    font-size: 15px;
+   
+}
+.cardfoot {
+    margin-top: 28px;
+}
+.cardfoot ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* margin-top: 10px; */
+    justify-content: center;
+}
+.cardfoot ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.cardfoot ul li:last-child {
+    margin-right: 0;
+}
+.cardfoot .fab {
+    font-size: 26px;
     color: white;
-    outline: none;
-    transition: all 0.5s;
+    cursor: pointer;
 }
-.midbuttons button:hover {
-    background: hsl(220,13%,13%);
-}
-.midbuttons .signin {
-    margin-right: 5px;
-}
-.midbuttons .signup {
-    margin-left: 5px;
+
+.cardfoot .fab:hover {
+    color: black;
+    font-size: 30px;
 }
 
 .footer {
