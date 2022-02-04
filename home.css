@@ -277,10 +277,11 @@ a {
     color: white;
     cursor: pointer;
     font-size: 27px;
+    transition: 0.3s;
 }
 .footericons .fab:hover {
     color: #05a04b;
-    font-size: 30px;
+    transform: scale(1.25);
 }
 
 .footer .name p {

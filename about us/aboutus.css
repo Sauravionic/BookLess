@@ -211,11 +211,12 @@ a {
     font-size: 26px;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .cardfoot .fab:hover {
     color: black;
-    font-size: 30px;
+    transform: scale(1.25);
 }
 
 .footer {
