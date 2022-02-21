@@ -1,59 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="signin.js" defer></script>
     <title>BookLess | SignUp</title>
-</head>
-<body>
-    <div class="container">
-        <div class="forms-container">
-            <div class="signin-signup">
-                <form action="#" class="sign-in-form">
-                    <h2 class="title">Sign Up</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username">
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password">
-                    </div>
-                    <input type="submit" class="btn solid" value="Register">
-                    <p class="social-text">Or Sign Up with social platforms</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </form>
-            </div>
+  </head>
+  <body>
+    <section class="container">
+      <nav class="navigation">
+        <div class="logo">
+          <img
+            src="../Images/bookless_logo.png"
+            onclick="window.location.href = '../home.html'"
+            alt="Logo"
+          />
         </div>
-        <div class="image">
-            <img src="../Images/Authentication.gif" alt="">
+        <div class="options">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <span class="menu__title">
+                  <span class="menu__first-word" data-hover="About">
+                    About
+                  </span>
+                  <span class="menu__second-word" data-hover="Us"> Us </span>
+                </span>
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <span class="menu__title">
+                  <span class="menu__first-word" data-hover="New"> New </span>
+                  <span class="menu__second-word" data-hover="Arrivals">
+                    Arrivals
+                  </span>
+                </span>
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <span class="menu__title">
+                  <span class="menu__first-word" data-hover="Our"> Our </span>
+                  <span class="menu__second-word" data-hover="Community">
+                    Commumity
+                  </span>
+                </span>
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="../contact us/contactus.html" class="menu__link">
+                <span class="menu__title">
+                  <span class="menu__first-word" data-hover="Contact">
+                    Contact
+                  </span>
+                  <span class="menu__second-word" data-hover="Us"> Us </span>
+                </span>
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a href="../signin/signin.html" class="menu__link">
+                <span class="menu__title">
+                  <span class="menu__first-word" data-hover="Sign"> Sign </span>
+                  <span class="menu__second-word" data-hover="In"> In </span>
+                </span>
+              </a>
+            </li>
+
+            <li class="menu__item signup">
+              <a href="../signup/signup.html" class="menu__link signup_link">
+                <span class="menu__title">
+                  <span
+                    class="menu__first-word signup_first-word"
+                    data-hover="Sign"
+                  >
+                    Sign
+                  </span>
+                  <span
+                    class="menu__second-word signup_second-word"
+                    data-hover="Up"
+                  >
+                    Up
+                  </span>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-    </div> 
-    <div class="content">
-        <h2>New Here ? </h2>
-        <p>Sign up and use our services at one go..</p>
-        <p>Remember Wear a mask and <br>wash your hands every 60 minutes</p>
-    </div>
-</body>
+      </nav>
+      <div class="midbody">
+        <div class="leftBody">
+          <div class="headers">
+            <p>BookLess Inc.</p>
+            <h1>Sign Up</h1>
+          </div>
+          <div class="formControl">
+            <form action="#">
+              <div class="usernameDiv">
+                <div class="firstname">
+                  <label for="firstname">First Name</label>
+                  <input type="text" name="firstname" class="firstname" id="firstname" placeholder="First Name" required>
+                </div>
+                <div class="lastname">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" name="lastname" class="lastname" id="lastname" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="emailDiv">
+                <label for="email">E-mail</label>
+                <input type="email" name = "email" class="email" id="email" placeholder="E-mail" required>
+              </div>
+              <div class="passwordDiv">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="password" placeholder="Password" required>
+              </div>
+              <div class="buttonDiv">
+                <button type="submit" class="submit" id="submit"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="rightBody">
+          <div class="images">
+            <img src="../Images/Writing room (2).gif" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
