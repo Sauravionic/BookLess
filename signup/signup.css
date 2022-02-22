@@ -147,7 +147,9 @@ a {
 	color: #0c8040;
 	padding-left: 2px;
 }
-
+svg {
+	width: 87%;
+}
 form label {
 	display: block;
 	margin-bottom: 9px;
