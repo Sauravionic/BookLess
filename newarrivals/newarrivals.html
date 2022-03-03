@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=seci, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="newarrivals.css">
     <title>BookLess | New Arrivals</title>
 </head>
@@ -63,27 +64,48 @@
                   </a>
                 </li>
     
-                <li class="menu__item">
+                <!-- <li class="menu__item">
                   <a href="../signin/signin.html" class="menu__link">
-                    <!-- <span class="menu__title">
+                    <span class="menu__title">
                       <span class="menu__first-word" data-hover="Sign"> Sign </span>
                       <span class="menu__second-word" data-hover="In"> In </span>
-                    </span> -->
+                    </span>
                   </a>
-                </li>
+                </li> -->
     
-                <li class="menu__item signup">
+                <!-- <li class="menu__item signup">
                   <a href="../signup/signup.html" class="menu__link signup_link">
-                    <!-- <span class="menu__title">
+                    <span class="menu__title">
                       <span class="menu__first-word signup_first-word" data-hover="Sign">Sign</span>
                       <span class="menu__second-word signup_second-word" data-hover="Up">Up</span>
-                    </span> -->
+                    </span>
                   </a>
-                </li>
+                </li> -->
+
+                <div class="action">
+                    <div class="profile" onclick="menuToggle();">
+                        <i class="fa-solid fa-skull"></i>
+                    </div>
+                    <div class="manu">
+                        <h3>User</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-user-astronaut fa-flip" style="--fa-animation-duration: 3s;"></i> <a href="#">My Profile</a></li>
+                            <li><i class="fa-solid fa-user-gear fa-flip" style="--fa-animation-duration: 3s;"></i><a href="#">Edit Profile</a></li>
+                            <li><i class="fa-solid fa-handshake-angle fa-flip" style="--fa-animation-duration: 3s;"></i><a href="#">Help</a></li>
+                            <li><i class="fa-solid fa-right-from-bracket fa-flip" style="--fa-animation-duration: 3s;"></i><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
               </ul>
             </div>
           </nav>
         
     </section>
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.manu');
+            toggleMenu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
